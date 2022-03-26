@@ -1,0 +1,43 @@
+/* начинаю оформление кнопок */
+.portfolio {
+  /* margin-top: 94px; - спорный момент */
+  @extend %basic-padding;
+}
+/* .frame {
+} */
+.portfolio__filter {
+  @extend %reset-style;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .portfolio__list-button:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio__button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--akcent-color);
+  }
+}
