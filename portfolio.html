@@ -24,8 +24,69 @@
   <body>
     <!--  Делаю шапку    -->
     <header class="header">
+       <div class="header__mob-menu" id="header__mob-menu" data-menu  >
+           <nav>
+           <ul class="menu-list">
+             <li class="menu-list__mob">
+               <a class="menu-list__link " href="./index.html">
+                 Студия
+                 </a>
+               </li>
+             <li class="menu-list__mob">
+               <a class="menu-list__link current" href="">
+                 Портфолио
+               </a>
+               </li>
+             <li class="menu-list__mob">
+               <a class="menu-list__link" href="">
+                 Контакты
+                </a>
+               </li>
+           </ul>
+           </nav> 
+           <address>
+             <ul class="adress-menu">
+               <li class="adress-menu__list"><a class="adress-menu__link link--tel" href="tel:+380961111111">
+                38 096 111 11 11
+               </a>
+              </li>
+               <li class="adress-menu__list"><a class="adress-menu__link" href="mailto:info@devstudio.com">
+                 info@devstudio.com
+               </a>
+              </li>
+             </ul>
+              </address>
+              <ul class="sub-menu">
+                <li class="sub-menu__list">
+                  <a href="" class="sub-menu__link">
+                    Instagram
+                  </a></li>
+                <li class="sub-menu__list">
+                  <a href="" class="sub-menu__link">
+                   Twitter
+                  </a></li>
+                <li class="sub-menu__list">
+                  <a href="" class="sub-menu__link">
+                    Facebook
+                  </a></li>
+                <li class="sub-menu__list">
+                  <a href="" class="sub-menu__link">
+                   LinkendIn
+                  </a></li>
+              </ul>
+         </div>      
       <div class="container-h header__nav-main">
       <a class="header__logo" href=""><span>Web</span>Studio</a>
+      <button class="header__button" data-menu-button
+      aria-expanded="false"
+      aria-controls="header__mob-menu">
+        <svg width="40" height="40">
+          <use class="header__icomenu " href="./images/sprite.svg#icon-menu-h" >            
+          </use>
+          <use class="header__ico-cross " href="./images/sprite.svg#icon-close-h" >            
+          </use>
+        </svg>        
+      </button>
       <nav>
         <ul class="header__pf-list">
           <li class="header__list"><a class="header__link" href="./index.html">Студия</a></li>
@@ -65,10 +126,11 @@
              <a class=" portfolio__link-projekt" href="">
               <div class="portfolio__move-up">  
             <img
+              srcset="./images/crack1x.jpg 1x, ./images/crack2x.jpg 2x"
               src="./images/tehcrack.jpg"
               alt="Технокряк"
-              width="370"
-              height="294"
+              width=""
+              height=""
             />
             <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
             <div class="portfolio__desc-item"> 
@@ -80,9 +142,10 @@
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
             <div class="portfolio__move-up">
             <img
+            srcset="./images/nba1x.jpg 1x, ./images/nba2x.jpg 2x"
               src="./images/new-orlean.jpg"
               alt="Постер"
-              width="370"
+              width=""
               height="294"
             />  <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
             <div class="portfolio__desc-item">
@@ -90,11 +153,13 @@
             <p class="portfolio__desc">Дизайн</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-           <div class="portfolio__move-up"> <img
+           <div class="portfolio__move-up">
+              <img
+              srcset="./images/seafood1x.jpg 1x, ./images/seafood2x.jpg 2x"
               src="./images/seafood.jpg"
               alt="Морепродукты"
-              width="370"
-              height="294"
+              width=""
+              height=""
             /> 
              <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
              <div class="portfolio__desc-item">
@@ -102,11 +167,13 @@
             <p class="portfolio__desc">Приложение</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-           <div class="portfolio__move-up"> <img
+           <div class="portfolio__move-up">
+              <img
+              srcset="./images/pod1x.jpg 1x, ./images/pod2x.jpg 2x"
               src="./images/prime.jpg"
               alt="Наушники"
-              width="370"
-              height="294"
+              width=""
+              height=""
             /> 
              <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
              <div class="portfolio__desc-item">
@@ -115,11 +182,13 @@
           </li>
           
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-            <div class="portfolio__move-up"><img
+            <div class="portfolio__move-up">
+              <img
+              srcset="./images/box1x.jpg 1x, ./images/box2x.jpg 2x"
               src="./images/boxes.jpg"
               alt="Посылка"
-              width="370"
-              height="294"
+              width=""
+              height=""
             />  
             <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
             <div class="portfolio__desc-item">
@@ -127,11 +196,13 @@
             <p class="portfolio__desc">Приложение</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-            <div class="portfolio__move-up"><img
+            <div class="portfolio__move-up">
+              <img
+              srcset="./images/desctop1x.jpg 1x, ./images/desctop2x.jpg 2x"
               src="./images/borders.jpg"
               alt="Интерпритация границ"
-              width="370"
-              height="294"
+              width=""
+              height=""
             /> 
              <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
              <div class="portfolio__desc-item">
@@ -139,11 +210,13 @@
             <p class="portfolio__desc">Веб-сайт</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-            <div class="portfolio__move-up"><img
+            <div class="portfolio__move-up">
+              <img
+              srcset="./images/book1x.jpg 1x, ./images/book2x.jpg 2x"
               src="./images/limited-edition.jpg"
               alt="Ограниченное издание"
-              width="370"
-              height="294"
+              width=""
+              height=""
             />  
             <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
             <div class="portfolio__desc-item">
@@ -151,17 +224,25 @@
             <p class="portfolio__desc">Дизайн</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-            <div class="portfolio__move-up"><img src="./images/lab.jpg" alt="Лейбел" width="370" height="294" />
+            <div class="portfolio__move-up">
+              <img 
+              srcset="./images/lab1x.jpg 1x, ./images/lab2x.jpg 2x"
+              src="./images/lab.jpg"
+               alt="Лейбел" 
+               width=""
+                height="" />
              <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> 
              <div class="portfolio__desc-item"><h2 class="portfolio__title">Проект LAB</h2>
             <p class="portfolio__desc">Маркетинг</p></div></a>
           </li>
           <li class="portfolio__item"> <a class="portfolio__link-projekt" href="">
-            <div class="portfolio__move-up"><img
+            <div class="portfolio__move-up">
+              <img
+              srcset="./images/not1x.jpg 1x, ./images/not2x.jpg 2x"
               src="./images/growing-bussines.jpg"
               alt="Бизнес рост"
-              width="370"
-              height="294"
+              width=""
+              height=""
             /> 
             <p class="portfolio__desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> 
             <div class="portfolio__desc-item">
@@ -172,7 +253,7 @@
         </div>
       </section>
     </main>
-  </body>
+  
 
  <!-- Начинаю делать подвал-->
     <footer class="footer">
@@ -206,5 +287,7 @@
         </div>
         <!-- начинаю делать форму на подписку -->
        </footer>
+       <script src="./js/mobil-menu.js"></script>
+       </body>
 </html>
 

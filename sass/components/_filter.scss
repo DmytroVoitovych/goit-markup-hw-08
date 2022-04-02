@@ -3,6 +3,14 @@
   /* margin-top: 94px; - спорный момент */
   @extend %basic-padding;
 }
+
+@media screen and (max-width: 767.5px) {
+  .portfolio{
+    padding-top: 60px;
+    padding-bottom: 60px
+  }
+}
+
 /* .frame {
 } */
 .portfolio__filter {
@@ -14,6 +22,45 @@
   .portfolio__list-button:not(:last-child) {
     margin-right: 8px;
   }
+}
+
+@media screen and (max-width:480px){
+  .portfolio__list-project{
+    margin-top: 40px;
+  }
+  .portfolio__filter{
+   margin-bottom: -15px;
+   margin-right: -8px;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   
+  }
+  .portfolio__list-button{
+    margin-bottom: 15px;
+     margin-right: 8px;
+     }
+
+  .portfolio__list-button + .portfolio__list-button {
+      
+     }
+
+}
+
+
+@media  screen and (min-width:480px) and (max-width: 767.5px) {
+ .portfolio__filter{
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin-bottom: 40px;
+   .portfolio__list-button:nth-child(-n + 2){
+     margin-bottom: 15px;
+ }
+  .portfolio__list-button:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+
+
+}
 }
 
 .portfolio__button {

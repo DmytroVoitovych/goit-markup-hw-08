@@ -44,6 +44,11 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* 
@@ -233,6 +238,7 @@ body::before {
   }
   .header__button.is-open {
     position: fixed;
+    z-index: 2;
     top: 10px;
     right: 15px;
     overflow-y: scroll;
@@ -360,12 +366,20 @@ body::before {
     background-color: var(--white-color);
     padding: 48px 83px 48px 40px;
     overflow-y: scroll;
+    z-index: 1;
   }
 }
 
 /* начинаю оформление кнопок */
 .portfolio {
   /* margin-top: 94px; - спорный момент */
+}
+
+@media screen and (max-width: 767.5px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 /* .frame {
@@ -382,6 +396,42 @@ body::before {
 
 .portfolio__filter .portfolio__list-button:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__list-project {
+    margin-top: 40px;
+  }
+  .portfolio__filter {
+    margin-bottom: -15px;
+    margin-right: -8px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .portfolio__list-button {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
+  .portfolio__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .portfolio__filter .portfolio__list-button:nth-child(-n + 2) {
+    margin-bottom: 15px;
+  }
+  .portfolio__filter .portfolio__list-button:nth-child(3n + 3) {
+    margin-right: 0;
+  }
 }
 
 .portfolio__button {
@@ -466,6 +516,16 @@ body::before {
   margin-right: 0;
 }
 
+@media screen and (max-width: 767.5px) {
+  .portfolio__item {
+    width: 450px;
+    margin-right: 0;
+  }
+  .portfolio__item:nth-last-child(-n + 8) {
+    margin-top: 30px;
+  }
+}
+
 .portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -529,6 +589,13 @@ body::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio__desc-card {
+    padding: 2px;
+    text-align: center;
+  }
 }
 
 /*начинаю работу над футером */

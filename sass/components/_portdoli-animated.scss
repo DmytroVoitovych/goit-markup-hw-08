@@ -26,3 +26,10 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+@media screen and (max-width: 400px){
+  .portfolio__desc-card{
+    padding: 2px;
+    text-align:center;
+  }
+}

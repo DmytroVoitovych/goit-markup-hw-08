@@ -50,6 +50,17 @@
   }
 }
 
+@media  screen  and (max-width: 767.5px) {
+  .portfolio__item{
+    width: 450px;
+    margin-right: 0;
+
+    &:nth-last-child(-n + 8) {
+      margin-top: 30px;
+    }
+  }
+}
+
 .portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
