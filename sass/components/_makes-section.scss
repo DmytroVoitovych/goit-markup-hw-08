@@ -11,7 +11,12 @@
 
 .makes {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
 }
+
 .makes__list-img {
   list-style: none;
   display: flex;

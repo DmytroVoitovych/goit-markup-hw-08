@@ -3,8 +3,16 @@
   @extend %basic-padding;
   background: #f5f4fa;
 
+  @media screen and (max-width: 767.5px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .title-section {
     padding: 0;
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -15,8 +23,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 768px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
   &:not(:last-child) {
     margin-right: 30px;
+    @media screen and (max-width: 767.5px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   .our-team__disc {
@@ -29,6 +46,10 @@
   display: flex;
   margin: 0;
   padding-left: 0;
+
+  @media screen and (max-width: 767.5px) {
+    display: block;
+  }
 }
 
 .our-team__title-team {
