@@ -3,7 +3,7 @@
   @extend %basic-padding;
   background: #f5f4fa;
 
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: 1199.5px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -23,10 +23,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.5px) {
     max-width: 450px;
     width: 100%;
   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+     max-width: 354px;
+     width: 100%;
+   }
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -34,6 +39,15 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-child(-n+2) {
+      margin-bottom: 30px;
+    }
+
   }
 
   .our-team__disc {
@@ -49,6 +63,10 @@
 
   @media screen and (max-width: 767.5px) {
     display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    flex-wrap: wrap;
   }
 }
 

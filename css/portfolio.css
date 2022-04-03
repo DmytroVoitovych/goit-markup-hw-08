@@ -80,6 +80,12 @@ body::before {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-h {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container-h {
     width: 1200px;
@@ -104,6 +110,12 @@ body::before {
 @media screen and (min-width: 480px) and (max-width: 767.5px) {
   .container {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
   }
 }
 
@@ -225,6 +237,19 @@ body::before {
 @media screen and (max-width: 767.5px) {
   .header__nav-flex {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__nav-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__kontakt:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 }
 
@@ -620,6 +645,16 @@ body::before {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__right-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__otstup {
   margin-right: 70px;
 }
@@ -628,6 +663,13 @@ body::before {
   .footer__otstup {
     margin-right: 0;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__otstup {
+    text-align: center;
+    margin-right: 165px;
   }
 }
 
@@ -712,6 +754,14 @@ body::before {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__flex {
+    text-align: center;
+    margin-right: 0;
+    padding-top: 5px;
+  }
+}
+
 .footer__push-net {
   margin-bottom: 20px;
   font-weight: 700;
@@ -789,7 +839,7 @@ body::before {
   padding-top: 12px;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .footer__subscribe {
     width: 100%;
     padding-top: 0;
@@ -799,7 +849,7 @@ body::before {
   }
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .footer__subscribe div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -812,6 +862,13 @@ body::before {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__subscribe {
+    padding: 0;
+    margin-top: 60px;
   }
 }
 
@@ -863,7 +920,7 @@ body::before {
   transition: border var(--kubik);
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .footer__put-sign {
     max-width: 450px;
     width: 100%;
