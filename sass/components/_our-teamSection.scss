@@ -28,7 +28,7 @@
     width: 100%;
   }
 
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
+   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
      max-width: 354px;
      width: 100%;
    }
@@ -39,7 +39,7 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
-
+     @media screen and (min-width: 768px) and (max-width: 1199.5px){
     &:nth-child(even) {
       margin-right: 0;
     }
@@ -47,7 +47,7 @@
     &:nth-child(-n+2) {
       margin-bottom: 30px;
     }
-
+  }
   }
 
   .our-team__disc {
@@ -65,7 +65,7 @@
     display: block;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199.5px){
     flex-wrap: wrap;
   }
 }
