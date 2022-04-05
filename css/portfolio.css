@@ -616,10 +616,10 @@ body::before {
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   letter-spacing: 0.03em;
-  -webkit-transition: -webkit-transform var(--kubik);
-  transition: -webkit-transform var(--kubik);
-  transition: transform var(--kubik);
-  transition: transform var(--kubik), -webkit-transform var(--kubik);
+  -webkit-transition: opacity var(--kubik), -webkit-transform var(--kubik);
+  transition: opacity var(--kubik), -webkit-transform var(--kubik);
+  transition: transform var(--kubik), opacity var(--kubik);
+  transition: transform var(--kubik), opacity var(--kubik), -webkit-transform var(--kubik);
   /* overflow: hidden; */
   opacity: 0;
 }
@@ -629,6 +629,10 @@ body::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+  -webkit-transition: opacity var(--kubik), -webkit-transform var(--kubik);
+  transition: opacity var(--kubik), -webkit-transform var(--kubik);
+  transition: transform var(--kubik), opacity var(--kubik);
+  transition: transform var(--kubik), opacity var(--kubik), -webkit-transform var(--kubik);
 }
 
 @media screen and (max-width: 400px) {
