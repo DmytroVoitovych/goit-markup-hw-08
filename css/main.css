@@ -409,7 +409,7 @@ body::before {
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-dream.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-dream.jpg);
-  background-size: auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -486,7 +486,7 @@ body::before {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header-tablet1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header-tablet1x.jpg);
-    background-size: 768px 400px;
+    background-size: 100% 400px;
     background-position: center center;
   }
 }
