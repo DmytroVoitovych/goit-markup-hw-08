@@ -4,7 +4,7 @@
   @extend %basic-padding;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .portfolio{
     padding-top: 60px;
     padding-bottom: 60px
@@ -22,11 +22,15 @@
   .portfolio__list-button:not(:last-child) {
     margin-right: 8px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (max-width:480px){
   .portfolio__list-project{
-    margin-top: 40px;
+    padding-top: 40px;
   }
   .portfolio__filter{
    margin-bottom: -15px;
@@ -51,7 +55,8 @@
  .portfolio__filter{
    flex-wrap: wrap;
    justify-content: flex-start;
-   margin-bottom: 40px;
+   padding-bottom: 40px;
+   margin-bottom: 0;
    .portfolio__list-button:nth-child(-n + 2){
      margin-bottom: 15px;
  }

@@ -777,9 +777,10 @@ body::before {
   padding: 0;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .our-team .title-section {
     margin-bottom: 30px;
+    font-size: 28px;
   }
 }
 
@@ -947,9 +948,10 @@ body::before {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .client-often__title {
     margin-bottom: 30px;
+    font-size: 28px;
   }
 }
 

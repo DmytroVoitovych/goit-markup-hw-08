@@ -18,8 +18,10 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: 1199.5px) {
     margin-bottom: 30px;
+    font-size: 28px;
+    
   }
 }
 /* секция постоянных клиентов */

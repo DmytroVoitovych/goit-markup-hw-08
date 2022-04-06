@@ -408,7 +408,7 @@ body::before {
   /* margin-top: 94px; - спорный момент */
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -431,9 +431,16 @@ body::before {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .portfolio__filter {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .portfolio__list-project {
-    margin-top: 40px;
+    padding-top: 40px;
   }
   .portfolio__filter {
     margin-bottom: -15px;
@@ -457,7 +464,8 @@ body::before {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
   }
   .portfolio__filter .portfolio__list-button:nth-child(-n + 2) {
     margin-bottom: 15px;
