@@ -5,7 +5,7 @@
   display: none;
 
   nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   address {
@@ -99,9 +99,10 @@
 
 @media screen and (max-width: 767.5px) {
   .header__mob-menu.is-open {
-    display: block;
+    display: flex;
     position: fixed;
-
+    justify-content: space-between;
+    flex-direction: column;
     top: 0;
     left: 0;
 

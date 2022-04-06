@@ -35,7 +35,6 @@
 }
 
 body {
-  /* position: relative; */
   background-color: #ffffff;
   color: #212121;
   font-family: Roboto, sans-serif;
@@ -298,7 +297,7 @@ body::before {
 }
 
 .header__mob-menu nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .header__mob-menu address {
@@ -382,8 +381,17 @@ body::before {
 
 @media screen and (max-width: 767.5px) {
   .header__mob-menu.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
